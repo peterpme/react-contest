@@ -53,8 +53,12 @@
     "rimraf": "^2.6.1",
     "rollup": "^0.41.6",
     "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-buble": "^0.15.0",
     "standard": "^10.0.2",
     "strip-json-comments-cli": "^1.0.1",
     "uglify-js": "^2.8.22"
+  },
+  "dependencies": {
+    "js-cookie": "^2.1.4"
   }
 }
