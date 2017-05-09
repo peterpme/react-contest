@@ -1,6 +1,6 @@
 {
   "name": "react-contest",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A simple tool to A/B/(C) test components",
   "jsnext:main": "dist/react-contest.es.js",
   "module": "dist/react-contest.es.js",
@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "build": "npm-run-all clean -p rollup -p minify:* -s size",
+    "dev": "rollup -c -w",
     "clean": "rimraf dist",
     "rollup": "rollup -c",
     "minify:cjs": "uglifyjs $npm_package_main -cm toplevel -o $npm_package_main -p relative --in-source-map ${npm_package_main}.map --source-map ${npm_package_main}.map",
@@ -58,7 +59,8 @@
     "strip-json-comments-cli": "^1.0.1",
     "uglify-js": "^2.8.22"
   },
-  "dependencies": {
-    "js-cookie": "^2.1.4"
+  "peerDependencies": {
+    "js-cookie": "^2.1.4",
+    "react": ">=0.14"
   }
 }
