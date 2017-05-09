@@ -1,0 +1,23 @@
+{
+  "name": "react-contest",
+  "version": "1.0.0",
+  "description": "A simple tool to A/B/(C) test components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterpme/react-contest.git"
+  },
+  "keywords": [
+    "a/b",
+    "testing"
+  ],
+  "author": "Peter Piekarczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterpme/react-contest/issues"
+  },
+  "homepage": "https://github.com/peterpme/react-contest#readme"
+}
