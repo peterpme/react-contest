@@ -1,6 +1,6 @@
 {
   "name": "react-contest",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A simple tool to A/B/(C) test components",
   "jsnext:main": "dist/react-contest.es.js",
   "module": "dist/react-contest.es.js",
