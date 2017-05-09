@@ -1,3 +1,4 @@
+import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import buble from 'rollup-plugin-buble';
 import fs from 'fs'
@@ -6,15 +7,20 @@ const pkg = JSON.parse(fs.readFileSync('./package.json'))
 
 export default {
   entry: 'src/index.js',
-  external: ['react', 'js-cookie'],
+  external: [
+    'react',
+    'js-cookie',
+  ],
   exports: 'named',
-  globals: { react: 'React', 'js-cookie': 'Cookies' },
+  globals: {
+    react: 'React',
+    'js-cookie': 'Cookies',
+  },
   useStrict: false,
   sourceMap: true,
   plugins:[
-    commonjs({
-      sourceMap: false,
-    }),
+    resolve(),
+    commonjs(),
     buble()
   ],
   targets: [
