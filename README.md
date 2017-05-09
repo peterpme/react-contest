@@ -13,6 +13,7 @@ Super tiny A/B testing platform for your own components.
 
 ```es6
 <Experiment
+  name="showAdOnDetailPage"
   onSelect={variant => {
     console.log(`${variant.name} viewed`)
   }}
