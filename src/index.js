@@ -27,7 +27,6 @@ function getExperiment (props) {
 function getVariationName (variants) {
     const chances = variants.map(v => v.chance);
     const index = selectWinner(chances);
-    const variationName = variants[index].name;
     return index;
 }
 
