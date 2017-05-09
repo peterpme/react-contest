@@ -1,3 +1,11 @@
+# Components
+
+ExperimentProvider - global experiment engine
+
+Control and handle all of your experiments at a high level
+
+Variant - individual a/b testing
+based on the experiment name you'll figure out if the test should be shown or hidden
 # Contest
 
 Super tiny A/B testing platform for your own components.
