@@ -2,10 +2,10 @@
   "name": "react-contest",
   "version": "0.1.0",
   "description": "A simple tool to A/B/(C) test components",
-  "jsnext:main": "dist/holen.es.js",
-  "module": "dist/holen.es.js",
-  "main": "dist/holen.js",
-  "umd:main": "dist/holen.umd.js",
+  "jsnext:main": "dist/react-contest.es.js",
+  "module": "dist/react-contest.es.js",
+  "main": "dist/react-contest.js",
+  "umd:main": "dist/react-contest.umd.js",
   "files": [
     "dist"
   ],
